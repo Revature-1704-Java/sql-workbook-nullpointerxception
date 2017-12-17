@@ -278,4 +278,3 @@ SELECT * FROM employee a, employee b WHERE a.reportsto=b.reportsto;
 /* 7.6 */
 SELECt * FROM invoiceline INNER JOIN invoice ON invoiceline.invoiceid=invoice.invoiceid INNER JOIN customer ON invoice.customerid=customer.customerid INNER JOIN employee ON customer.supportrepid=employee.employeeid INNER JOIN track ON invoiceline.trackid=track.trackid INNER JOIN mediatype ON track.mediatypeid=mediatype.mediatypeid INNER JOIN genre ON track.genreid=genre.genreid INNER JOIN album ON track.albumid=album.albumid INNER JOIN artist ON album.artistid=artist.artistid INNER JOIN playlisttrack ON playlisttrack.trackid=track.trackid INNER JOIN playlist ON playlisttrack.playlistid=playlist.playlistid;
 
-/* 9.0 */
